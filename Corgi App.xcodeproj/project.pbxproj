@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C102667E2135AAB600D72FA9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102667D2135AAB600D72FA9 /* MenuViewController.swift */; };
+		C10266802135AB1300D72FA9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102667F2135AB1300D72FA9 /* Menu.swift */; };
 		C115A30021353101009A10C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115A2FF21353101009A10C7 /* AppDelegate.swift */; };
 		C115A30221353101009A10C7 /* FirstLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115A30121353101009A10C7 /* FirstLaunchController.swift */; };
 		C115A30521353101009A10C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C115A30321353101009A10C7 /* Main.storyboard */; };
@@ -86,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C102667D2135AAB600D72FA9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C102667F2135AB1300D72FA9 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		C115A2FC21353101009A10C7 /* Corgi App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corgi App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C115A2FF21353101009A10C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C115A30121353101009A10C7 /* FirstLaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchController.swift; sourceTree = "<group>"; };
@@ -340,6 +344,7 @@
 		C14F1DE6213560DA005E95F7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C102667D2135AAB600D72FA9 /* MenuViewController.swift */,
 				C115A30121353101009A10C7 /* FirstLaunchController.swift */,
 				C1A33B84213583910071A369 /* MainViewController.swift */,
 			);
@@ -350,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				C115A30321353101009A10C7 /* Main.storyboard */,
+				C102667F2135AB1300D72FA9 /* Menu.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -546,6 +552,8 @@
 				C1A33B85213583910071A369 /* MainViewController.swift in Sources */,
 				C115A30221353101009A10C7 /* FirstLaunchController.swift in Sources */,
 				C115A30021353101009A10C7 /* AppDelegate.swift in Sources */,
+				C102667E2135AAB600D72FA9 /* MenuViewController.swift in Sources */,
+				C10266802135AB1300D72FA9 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
