@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C115A30021353101009A10C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115A2FF21353101009A10C7 /* AppDelegate.swift */; };
+		C115A30221353101009A10C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115A30121353101009A10C7 /* ViewController.swift */; };
+		C115A30521353101009A10C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C115A30321353101009A10C7 /* Main.storyboard */; };
+		C115A30721353103009A10C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C115A30621353103009A10C7 /* Assets.xcassets */; };
+		C115A30A21353103009A10C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C115A30821353103009A10C7 /* LaunchScreen.storyboard */; };
+		C115A31521353103009A10C7 /* Corgi_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115A31421353103009A10C7 /* Corgi_AppTests.swift */; };
+		C115A32021353103009A10C7 /* Corgi_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115A31F21353103009A10C7 /* Corgi_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C115A31121353103009A10C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C115A2F421353101009A10C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C115A2FB21353101009A10C7;
+			remoteInfo = "Corgi App";
+		};
+		C115A31C21353103009A10C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C115A2F421353101009A10C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C115A2FB21353101009A10C7;
+			remoteInfo = "Corgi App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C115A2FC21353101009A10C7 /* Corgi App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corgi App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C115A2FF21353101009A10C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C115A30121353101009A10C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C115A30421353101009A10C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C115A30621353103009A10C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C115A30921353103009A10C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C115A30B21353103009A10C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C115A31021353103009A10C7 /* Corgi AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corgi AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C115A31421353103009A10C7 /* Corgi_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corgi_AppTests.swift; sourceTree = "<group>"; };
+		C115A31621353103009A10C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C115A31B21353103009A10C7 /* Corgi AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corgi AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C115A31F21353103009A10C7 /* Corgi_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corgi_AppUITests.swift; sourceTree = "<group>"; };
+		C115A32121353103009A10C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C115A2F921353101009A10C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A30D21353103009A10C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A31821353103009A10C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C115A2F321353101009A10C7 = {
+			isa = PBXGroup;
+			children = (
+				C115A2FE21353101009A10C7 /* Corgi App */,
+				C115A31321353103009A10C7 /* Corgi AppTests */,
+				C115A31E21353103009A10C7 /* Corgi AppUITests */,
+				C115A2FD21353101009A10C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C115A2FD21353101009A10C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C115A2FC21353101009A10C7 /* Corgi App.app */,
+				C115A31021353103009A10C7 /* Corgi AppTests.xctest */,
+				C115A31B21353103009A10C7 /* Corgi AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C115A2FE21353101009A10C7 /* Corgi App */ = {
+			isa = PBXGroup;
+			children = (
+				C115A2FF21353101009A10C7 /* AppDelegate.swift */,
+				C115A30121353101009A10C7 /* ViewController.swift */,
+				C115A30321353101009A10C7 /* Main.storyboard */,
+				C115A30621353103009A10C7 /* Assets.xcassets */,
+				C115A30821353103009A10C7 /* LaunchScreen.storyboard */,
+				C115A30B21353103009A10C7 /* Info.plist */,
+			);
+			path = "Corgi App";
+			sourceTree = "<group>";
+		};
+		C115A31321353103009A10C7 /* Corgi AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C115A31421353103009A10C7 /* Corgi_AppTests.swift */,
+				C115A31621353103009A10C7 /* Info.plist */,
+			);
+			path = "Corgi AppTests";
+			sourceTree = "<group>";
+		};
+		C115A31E21353103009A10C7 /* Corgi AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C115A31F21353103009A10C7 /* Corgi_AppUITests.swift */,
+				C115A32121353103009A10C7 /* Info.plist */,
+			);
+			path = "Corgi AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C115A2FB21353101009A10C7 /* Corgi App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C115A32421353103009A10C7 /* Build configuration list for PBXNativeTarget "Corgi App" */;
+			buildPhases = (
+				C115A2F821353101009A10C7 /* Sources */,
+				C115A2F921353101009A10C7 /* Frameworks */,
+				C115A2FA21353101009A10C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Corgi App";
+			productName = "Corgi App";
+			productReference = C115A2FC21353101009A10C7 /* Corgi App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C115A30F21353103009A10C7 /* Corgi AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C115A32721353103009A10C7 /* Build configuration list for PBXNativeTarget "Corgi AppTests" */;
+			buildPhases = (
+				C115A30C21353103009A10C7 /* Sources */,
+				C115A30D21353103009A10C7 /* Frameworks */,
+				C115A30E21353103009A10C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C115A31221353103009A10C7 /* PBXTargetDependency */,
+			);
+			name = "Corgi AppTests";
+			productName = "Corgi AppTests";
+			productReference = C115A31021353103009A10C7 /* Corgi AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C115A31A21353103009A10C7 /* Corgi AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C115A32A21353103009A10C7 /* Build configuration list for PBXNativeTarget "Corgi AppUITests" */;
+			buildPhases = (
+				C115A31721353103009A10C7 /* Sources */,
+				C115A31821353103009A10C7 /* Frameworks */,
+				C115A31921353103009A10C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C115A31D21353103009A10C7 /* PBXTargetDependency */,
+			);
+			name = "Corgi AppUITests";
+			productName = "Corgi AppUITests";
+			productReference = C115A31B21353103009A10C7 /* Corgi AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C115A2F421353101009A10C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Александр Сахнюков";
+				TargetAttributes = {
+					C115A2FB21353101009A10C7 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C115A30F21353103009A10C7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C115A2FB21353101009A10C7;
+					};
+					C115A31A21353103009A10C7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C115A2FB21353101009A10C7;
+					};
+				};
+			};
+			buildConfigurationList = C115A2F721353101009A10C7 /* Build configuration list for PBXProject "Corgi App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C115A2F321353101009A10C7;
+			productRefGroup = C115A2FD21353101009A10C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C115A2FB21353101009A10C7 /* Corgi App */,
+				C115A30F21353103009A10C7 /* Corgi AppTests */,
+				C115A31A21353103009A10C7 /* Corgi AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C115A2FA21353101009A10C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A30A21353103009A10C7 /* LaunchScreen.storyboard in Resources */,
+				C115A30721353103009A10C7 /* Assets.xcassets in Resources */,
+				C115A30521353101009A10C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A30E21353103009A10C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A31921353103009A10C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C115A2F821353101009A10C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A30221353101009A10C7 /* ViewController.swift in Sources */,
+				C115A30021353101009A10C7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A30C21353103009A10C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A31521353103009A10C7 /* Corgi_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115A31721353103009A10C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115A32021353103009A10C7 /* Corgi_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C115A31221353103009A10C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C115A2FB21353101009A10C7 /* Corgi App */;
+			targetProxy = C115A31121353103009A10C7 /* PBXContainerItemProxy */;
+		};
+		C115A31D21353103009A10C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C115A2FB21353101009A10C7 /* Corgi App */;
+			targetProxy = C115A31C21353103009A10C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C115A30321353101009A10C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C115A30421353101009A10C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C115A30821353103009A10C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C115A30921353103009A10C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C115A32221353103009A10C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C115A32321353103009A10C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C115A32521353103009A10C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5S74JC2ZC;
+				INFOPLIST_FILE = "Corgi App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------------------.Corgi-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C115A32621353103009A10C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5S74JC2ZC;
+				INFOPLIST_FILE = "Corgi App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------------------.Corgi-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C115A32821353103009A10C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5S74JC2ZC;
+				INFOPLIST_FILE = "Corgi AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------------------.Corgi-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Corgi App.app/Corgi App";
+			};
+			name = Debug;
+		};
+		C115A32921353103009A10C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5S74JC2ZC;
+				INFOPLIST_FILE = "Corgi AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------------------.Corgi-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Corgi App.app/Corgi App";
+			};
+			name = Release;
+		};
+		C115A32B21353103009A10C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5S74JC2ZC;
+				INFOPLIST_FILE = "Corgi AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------------------.Corgi-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Corgi App";
+			};
+			name = Debug;
+		};
+		C115A32C21353103009A10C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5S74JC2ZC;
+				INFOPLIST_FILE = "Corgi AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "------------------.Corgi-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Corgi App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C115A2F721353101009A10C7 /* Build configuration list for PBXProject "Corgi App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115A32221353103009A10C7 /* Debug */,
+				C115A32321353103009A10C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C115A32421353103009A10C7 /* Build configuration list for PBXNativeTarget "Corgi App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115A32521353103009A10C7 /* Debug */,
+				C115A32621353103009A10C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C115A32721353103009A10C7 /* Build configuration list for PBXNativeTarget "Corgi AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115A32821353103009A10C7 /* Debug */,
+				C115A32921353103009A10C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C115A32A21353103009A10C7 /* Build configuration list for PBXNativeTarget "Corgi AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115A32B21353103009A10C7 /* Debug */,
+				C115A32C21353103009A10C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C115A2F421353101009A10C7 /* Project object */;
+}
