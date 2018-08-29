@@ -1,0 +1,6 @@
+framework module Pods_Corgi_AppTests {
+  umbrella header "Pods-Corgi AppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
