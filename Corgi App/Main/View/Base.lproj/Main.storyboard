@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
         <array key="SF-Pro-Text-Medium.otf">
             <string>SFProText-Medium</string>
         </array>
@@ -234,11 +237,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBack" translatesAutoresizingMaskIntoConstraints="NO" id="y3E-ae-naZ">
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qK6-8i-8q6">
+                                <rect key="frame" x="6" y="110" width="362" height="109"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="36"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="51" maxX="196" maxY="6"/>
+                                <state key="normal" title="Питание" backgroundImage="DietButton">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="y3E-ae-naZ" firstAttribute="trailing" secondItem="xoP-Gu-05J" secondAttribute="trailing" id="HWP-eo-Gnm"/>
+                            <constraint firstItem="qK6-8i-8q6" firstAttribute="centerX" secondItem="y3E-ae-naZ" secondAttribute="centerX" id="RRf-bo-xg8"/>
                             <constraint firstItem="y3E-ae-naZ" firstAttribute="leading" secondItem="xoP-Gu-05J" secondAttribute="leading" id="SmI-tn-gX2"/>
+                            <constraint firstItem="y3E-ae-naZ" firstAttribute="top" secondItem="qK6-8i-8q6" secondAttribute="bottom" constant="-131" id="d0o-1P-iXi"/>
                             <constraint firstAttribute="bottom" secondItem="y3E-ae-naZ" secondAttribute="bottom" id="tDM-C3-Nbd"/>
                             <constraint firstItem="y3E-ae-naZ" firstAttribute="top" secondItem="xoP-Gu-05J" secondAttribute="top" id="yrH-Uq-z2j"/>
                         </constraints>
@@ -252,13 +265,25 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="fG6-gn-8GP"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="7je-Xo-Liy" kind="show" id="Y5O-sI-jpd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWX-5N-8Bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1981.5999999999999" y="37.684729064039409"/>
         </scene>
+        <!--Rubles-->
+        <scene sceneID="DCG-Mr-2YD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rubles" id="7je-Xo-Liy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hR-cc-9fn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876" y="41"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="DietButton" width="375" height="120"/>
         <image name="FirstLaunchButton" width="289" height="76"/>
         <image name="LoginImage" width="375" height="667"/>
         <image name="MainBack" width="375" height="667"/>
