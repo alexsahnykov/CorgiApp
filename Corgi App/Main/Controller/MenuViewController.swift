@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
  self.view.backgroundColor = UIColor.black.withAlphaComponent(0)
-        // Do any additional setup after loading the view.
+        LogOutButton.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +23,11 @@ class MenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var LogOutButton: UIButton!
+    @IBAction func logOutButton(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

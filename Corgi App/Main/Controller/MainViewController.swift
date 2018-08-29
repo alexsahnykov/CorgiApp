@@ -16,9 +16,9 @@ var backNavigationImage = UIImage(named: "NavigationBack.png")
     
     @IBAction func MenuButton(_ sender: Any) {
         if AppDelegate.menu_bool {
-            menuOpen()
+            menuOpen(animationDuration: 0.4)
         } else {
-            menuClose()
+            menuClose(animationDuration: 0.4)
         }
     }
     
@@ -27,8 +27,25 @@ var backNavigationImage = UIImage(named: "NavigationBack.png")
         super.viewDidLoad()
 navigationController?.navigationBar.setBackgroundImage(backNavigationImage, for: UIBarMetrics.default)
       menuVc = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-        menuClose()
+        
+        
+        let   swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respodToGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        
+        let   swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respodToGesture))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        
+        self.view.addGestureRecognizer(swipeRight)
+         self.view.addGestureRecognizer(swipeLeft)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        menuClose(animationDuration: 0)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,9 +53,9 @@ navigationController?.navigationBar.setBackgroundImage(backNavigationImage, for:
         // Dispose of any resources that can be recreated.
     }
     
-    func menuOpen () {
+    func menuOpen (animationDuration:Double) {
        
-        UIView.animate(withDuration: 0.4) { () -> Void in
+        UIView.animate(withDuration: animationDuration) { () -> Void in
             self.menuVc.view.frame = CGRect(x: 0, y: 60, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             self.menuVc.view.backgroundColor = UIColor.black.withAlphaComponent(0) // set color
             self.addChildViewController(self.menuVc)
@@ -51,14 +68,33 @@ navigationController?.navigationBar.setBackgroundImage(backNavigationImage, for:
     }
    
     
-    func menuClose () {
-        UIView.animate(withDuration: 0.4, animations: { () -> Void in
+    func menuClose (animationDuration:Double) {
+        UIView.animate(withDuration: animationDuration, animations: { () -> Void in
             self.menuVc.view.frame = CGRect(x: -UIScreen.main.bounds.width, y: 60, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)}) { (finished) in
             
             self.menuVc.view.removeFromSuperview()
         
         }
         AppDelegate.menu_bool = true
+    }
+    func menuCloseSwipe () {
+        if AppDelegate.menu_bool {
+
+        } else {
+            menuClose(animationDuration: 0.4)
+        }
+    }
+    
+    
+    @objc func respodToGesture(gesture : UISwipeGestureRecognizer) {
+        switch gesture.direction {
+        case UISwipeGestureRecognizerDirection.right:
+            menuOpen(animationDuration: 0.4)
+        case UISwipeGestureRecognizerDirection.left:
+            menuCloseSwipe()
+        default:
+            break
+        }
     }
     /*
     // MARK: - Navigation
