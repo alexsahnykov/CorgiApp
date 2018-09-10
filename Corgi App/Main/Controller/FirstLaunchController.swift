@@ -24,20 +24,27 @@ class FirstLaunchController: UIViewController {
         }
     override func viewDidAppear(_ animated: Bool) {
 
-           checkFirstLaunch()
-        }
+                   }
     
     
     
-    func checkFirstLaunch() {
+  /*  func checkFirstLaunch() {
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        var rooVC:UIViewController
         if launchedBefore  {
-            self.performSegue(withIdentifier: "FromFirstToMain", sender: nil)
+    rooVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainStoryboardID") as! MainViewController
+            //      self.performSegue(withIdentifier: "FromFirstToMain", sender: nil)
         } else {
-            print("First launch, setting UserDefault.")
             UserDefaults.standard.set(true, forKey: "launchedBefore")
+                rooVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstlaunchStoryboardID") as! FirstLaunchController
                 }
+        let appDelagate = UIApplication.shared.delegate as! AppDelegate
+        appDelagate.window?.rootViewController = rooVC
+        
         }
-
+*/
+    
+    
+    
 }
 

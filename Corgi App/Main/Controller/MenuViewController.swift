@@ -11,11 +11,15 @@ import UIKit
 class MenuViewController: UIViewController {
     @IBOutlet weak var menuAvatarImage: UIImageView!
     
+    @IBOutlet weak var accountIcon: UIImageView!
     @IBOutlet weak var menuView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
  self.view.backgroundColor = UIColor.black.withAlphaComponent(0)
-        LogOutButton.isHidden = false
+      //  LogOutButton.isHidden = false
+ self.menuView.backgroundColor = UIColor(white: 1, alpha: 0)
+        menuAvatarImage.layer.cornerRadius = menuAvatarImage.frame.size.width / 2
+        menuAvatarImage.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

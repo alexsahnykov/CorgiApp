@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Corgi App/Main/View/Base.lproj/Rubles.storyboard">
-   </FileRef>
-   <FileRef
       location = "group:Corgi App.xcodeproj">
    </FileRef>
    <FileRef

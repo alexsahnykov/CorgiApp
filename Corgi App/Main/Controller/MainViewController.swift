@@ -13,14 +13,24 @@ var backNavigationImage = UIImage(named: "NavigationBack.png")
     
     var menuVc : MenuViewController!
     
-    
     @IBAction func MenuButton(_ sender: Any) {
         if AppDelegate.menu_bool {
-            menuOpen(animationDuration: 0.4)
+                  enebaleButtons(logic: false)
+            menuOpen(animationDuration: 0.3)
         } else {
-            menuClose(animationDuration: 0.4)
+                 enebaleButtons(logic: true)
+            menuClose(animationDuration: 0.3)
         }
     }
+    @IBOutlet weak var wallk: UIButton!
+    @IBOutlet weak var fit: UIButton!
+    @IBOutlet weak var diet: UIButton!
+    @IBOutlet weak var training: UIButton!
+    @IBOutlet weak var chose: UIButton!
+    
+    
+    @IBOutlet weak var searchButton: UIView!
+    @IBOutlet weak var slideMenuView: UIView!
     
     
     override func viewDidLoad() {
@@ -38,13 +48,18 @@ navigationController?.navigationBar.setBackgroundImage(backNavigationImage, for:
         self.view.addGestureRecognizer(swipeRight)
          self.view.addGestureRecognizer(swipeLeft)
         
+      self.searchButton.backgroundColor = UIColor(white: 1, alpha: 0)
+    self.slideMenuView.backgroundColor = UIColor(white: 1, alpha: 0)
+   
         // Do any additional setup after loading the view.
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        enebaleButtons(logic: true)
         menuClose(animationDuration: 0)
+        
         
     }
 
@@ -81,7 +96,7 @@ navigationController?.navigationBar.setBackgroundImage(backNavigationImage, for:
         if AppDelegate.menu_bool {
 
         } else {
-            menuClose(animationDuration: 0.4)
+            menuClose(animationDuration: 0.3)
         }
     }
     
@@ -89,11 +104,21 @@ navigationController?.navigationBar.setBackgroundImage(backNavigationImage, for:
     @objc func respodToGesture(gesture : UISwipeGestureRecognizer) {
         switch gesture.direction {
         case UISwipeGestureRecognizerDirection.right:
-            menuOpen(animationDuration: 0.4)
+      enebaleButtons(logic: false)
+            menuOpen(animationDuration: 0.3)
         case UISwipeGestureRecognizerDirection.left:
+enebaleButtons(logic: true)
             menuCloseSwipe()
         default:
             break
+        }
+        
+      
+    }
+    func enebaleButtons (logic: Bool) {
+        let buttonsArray = [wallk,fit,training,chose,diet]
+        for item in buttonsArray {
+            item?.isEnabled = logic
         }
     }
     /*

@@ -19,6 +19,19 @@ static var menu_bool = true
         // Override point for customization after application launch.
         UIApplication.shared.statusBarStyle = .lightContent
         FirebaseApp.configure()
+
+            let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+            var rooVC:UIViewController
+            if launchedBefore  {
+                rooVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainStoryboardID") as! UINavigationController
+                //      self.performSegue(withIdentifier: "FromFirstToMain", sender: nil)
+            } else {
+                UserDefaults.standard.set(true, forKey: "launchedBefore")
+                rooVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstlaunchStoryboardID") as! FirstLaunchController
+            }
+            let appDelagate = UIApplication.shared.delegate as! AppDelegate
+            appDelagate.window?.rootViewController = rooVC
+        
         return true
     }
 
