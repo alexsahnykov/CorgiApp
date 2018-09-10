@@ -47,8 +47,7 @@
 		C11CAEAF2141664D005744F0 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11CAE922141664C005744F0 /* SF-Pro-Display-Regular.otf */; };
 		C11CAEB02141664D005744F0 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11CAE932141664D005744F0 /* SF-Pro-Display-ThinItalic.otf */; };
 		C11CAEB12141664D005744F0 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11CAE942141664D005744F0 /* SF-Pro-Text-Medium.otf */; };
-		C11CAEB52146684C005744F0 /* AdobeKaitiStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11CAEB42146684C005744F0 /* AdobeKaitiStd-Regular.otf */; };
-		C13724052136C50300B37FC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13724042136C50200B37FC7 /* GoogleService-Info.plist */; };
+		C15AC40B21466AAB008FABC9 /* AdobeKaitiStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C15AC40A21466AAB008FABC9 /* AdobeKaitiStd-Regular.otf */; };
 		C1A33B85213583910071A369 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A33B84213583910071A369 /* MainViewController.swift */; };
 		CC03E552D3A173EBFCD3C190 /* Pods_Corgi_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25081A8D31A19A84B5B67EF /* Pods_Corgi_App.framework */; };
 /* End PBXBuildFile section */
@@ -121,9 +120,8 @@
 		C11CAE922141664C005744F0 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "Corgi App/Fronts/SF-Pro-Display-Regular.otf"; sourceTree = SOURCE_ROOT; };
 		C11CAE932141664D005744F0 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-ThinItalic.otf"; path = "Corgi App/Fronts/SF-Pro-Display-ThinItalic.otf"; sourceTree = SOURCE_ROOT; };
 		C11CAE942141664D005744F0 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "Corgi App/Fronts/SF-Pro-Text-Medium.otf"; sourceTree = SOURCE_ROOT; };
-		C11CAEB42146684C005744F0 /* AdobeKaitiStd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AdobeKaitiStd-Regular.otf"; path = "../../../../Downloads/AdobeKaitiStd-Regular.otf"; sourceTree = "<group>"; };
-		C13724042136C50200B37FC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C13724062136C6E000B37FC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C15AC40A21466AAB008FABC9 /* AdobeKaitiStd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AdobeKaitiStd-Regular.otf"; path = "../../../AdobeKaitiStd-Regular.otf"; sourceTree = "<group>"; };
 		C1A33B84213583910071A369 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E25081A8D31A19A84B5B67EF /* Pods_Corgi_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corgi_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E329C4EE8E843AB89B848C4F /* Pods-Corgi AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corgi AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Corgi AppUITests/Pods-Corgi AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +241,7 @@
 				C11CAE882141664B005744F0 /* SF-Pro-Display-Heavy.otf */,
 				C11CAE872141664A005744F0 /* SF-Pro-Display-HeavyItalic.otf */,
 				C11CAE812141664A005744F0 /* SF-Pro-Display-Light.otf */,
+				C15AC40A21466AAB008FABC9 /* AdobeKaitiStd-Regular.otf */,
 				C11CAE8A2141664B005744F0 /* SF-Pro-Display-LightItalic.otf */,
 				C11CAE822141664A005744F0 /* SF-Pro-Display-Medium.otf */,
 				C11CAE8F2141664C005744F0 /* SF-Pro-Display-MediumItalic.otf */,
@@ -256,7 +255,6 @@
 				C11CAE7B21416649005744F0 /* SF-Pro-Text-Bold.otf */,
 				C11CAE832141664A005744F0 /* SF-Pro-Text-BoldItalic.otf */,
 				C11CAE902141664C005744F0 /* SF-Pro-Text-Heavy.otf */,
-				C11CAEB42146684C005744F0 /* AdobeKaitiStd-Regular.otf */,
 				C11CAE7C21416649005744F0 /* SF-Pro-Text-HeavyItalic.otf */,
 				C11CAE892141664B005744F0 /* SF-Pro-Text-Light.otf */,
 				C11CAE7E21416649005744F0 /* SF-Pro-Text-LightItalic.otf */,
@@ -310,7 +308,6 @@
 				C13724062136C6E000B37FC7 /* GoogleService-Info.plist */,
 				C115A30621353103009A10C7 /* Assets.xcassets */,
 				C115A30B21353103009A10C7 /* Info.plist */,
-				C13724042136C50200B37FC7 /* GoogleService-Info.plist */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -479,17 +476,16 @@
 				C11CAEAF2141664D005744F0 /* SF-Pro-Display-Regular.otf in Resources */,
 				C11CAE9D2141664D005744F0 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				C11CAEAC2141664D005744F0 /* SF-Pro-Display-MediumItalic.otf in Resources */,
-				C11CAEB52146684C005744F0 /* AdobeKaitiStd-Regular.otf in Resources */,
 				C11CAEA12141664D005744F0 /* SF-Pro-Text-Regular.otf in Resources */,
 				C11CAEA32141664D005744F0 /* SF-Pro-Display-Ultralight.otf in Resources */,
 				C11CAEA82141664D005744F0 /* SF-Pro-Display-Thin.otf in Resources */,
 				C11CAE992141664D005744F0 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
 				C11CAEA92141664D005744F0 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 				C11CAE9F2141664D005744F0 /* SF-Pro-Display-Medium.otf in Resources */,
-				C13724052136C50300B37FC7 /* GoogleService-Info.plist in Resources */,
 				C11CAEA02141664D005744F0 /* SF-Pro-Text-BoldItalic.otf in Resources */,
 				C11CAEB12141664D005744F0 /* SF-Pro-Text-Medium.otf in Resources */,
 				C115A30521353101009A10C7 /* Main.storyboard in Resources */,
+				C15AC40B21466AAB008FABC9 /* AdobeKaitiStd-Regular.otf in Resources */,
 				C11CAE952141664D005744F0 /* SF-Pro-Display-Black.otf in Resources */,
 				C11CAE962141664D005744F0 /* SF-Pro-Text-Semibold.otf in Resources */,
 				C11CAEA62141664D005744F0 /* SF-Pro-Text-Light.otf in Resources */,
