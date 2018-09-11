@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
 var backNavigationImage = UIImage(named: "NavigationBack.png")
     
-    var menuVc : MenuViewController!
+    var menuVc : LogInMenuViewController!
     
     @IBAction func MenuButton(_ sender: Any) {
         if AppDelegate.menu_bool {
@@ -36,7 +36,7 @@ var backNavigationImage = UIImage(named: "NavigationBack.png")
     override func viewDidLoad() {
         super.viewDidLoad()
 navigationController?.navigationBar.setBackgroundImage(backNavigationImage, for: UIBarMetrics.default)
-      menuVc = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+      menuVc = self.storyboard?.instantiateViewController(withIdentifier: "LogInMenuViewController") as! LogInMenuViewController
         
         
         let   swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respodToGesture))

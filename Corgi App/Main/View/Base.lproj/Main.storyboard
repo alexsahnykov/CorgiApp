@@ -109,7 +109,6 @@
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                             <color key="textColor" red="0.93333333333333335" green="0.72156862745098038" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -120,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="1036" y="417"/>
         </scene>
-        <!--Регистрация-->
+        <!--Авторизация-->
         <scene sceneID="11N-XJ-se1">
             <objects>
                 <viewController id="OiS-us-Y4m" sceneMemberID="viewController">
@@ -141,7 +140,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cxu-vT-Stz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Регистрация" id="BYv-5r-uI8"/>
+                    <navigationItem key="navigationItem" title="Авторизация" id="BYv-5r-uI8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sps-8r-CmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,24 +149,28 @@
         <!--Navigation Controller-->
         <scene sceneID="yTl-Bu-Uj2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-6l-YjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="6Lc-Ao-3HT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="50I-Dw-otV">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.93333333330000001" green="0.72156862749999995" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.72156862749999995" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="7rY-jW-Xxh" kind="relationship" relationship="rootViewController" id="hUH-ij-Zng"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-6l-YjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1026" y="-699"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Log In Menu View Controller-->
         <scene sceneID="i8P-vx-jX5">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="7rY-jW-Xxh" customClass="MenuViewController" customModule="Corgi_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInMenuViewController" id="7rY-jW-Xxh" customClass="LogInMenuViewController" customModule="Corgi_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOJ-WE-7SR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +261,7 @@
             </objects>
             <point key="canvasLocation" x="33" y="-699"/>
         </scene>
-        <!--View Controller-->
+        <!--Регистрация-->
         <scene sceneID="bhp-On-WQB">
             <objects>
                 <viewController id="9zw-1j-j39" sceneMemberID="viewController">
@@ -279,6 +282,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hLL-eE-ZFv"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Регистрация" id="Lsp-Qd-tkr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2I-oI-oGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -686,7 +690,7 @@
         <image name="фото" width="86" height="86"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K0d-ia-A9Q"/>
+        <segue reference="hq2-48-BJy"/>
         <segue reference="zRu-IK-RHf"/>
     </inferredMetricsTieBreakers>
 </document>
