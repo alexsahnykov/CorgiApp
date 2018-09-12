@@ -15,9 +15,8 @@ class LogInMenuViewController: UIViewController {
     @IBOutlet weak var menuView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
- self.view.backgroundColor = UIColor.black.withAlphaComponent(0)
-      //  LogOutButton.isHidden = false
- self.menuView.backgroundColor = UIColor(white: 1, alpha: 0)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0)
+        self.menuView.backgroundColor = UIColor(white: 1, alpha: 0)
         menuAvatarImage.layer.cornerRadius = menuAvatarImage.frame.size.width / 2
         menuAvatarImage.clipsToBounds = true
     }

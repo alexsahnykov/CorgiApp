@@ -13,6 +13,9 @@
         <array key="Kaiti.otf">
             <string>STKaitiTC-Regular</string>
         </array>
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
         <array key="SF-Pro-Display-Medium.otf">
             <string>SFProDisplay-Medium</string>
         </array>
@@ -130,6 +133,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regback" translatesAutoresizingMaskIntoConstraints="NO" id="nWc-Fb-EGA">
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="logregbuttonBack" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-LO-fG3">
+                                <rect key="frame" x="44" y="440" width="286" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="logregbuttonBack" translatesAutoresizingMaskIntoConstraints="NO" id="BYX-rw-ilx">
+                                <rect key="frame" x="44" y="514" width="286" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -149,7 +166,6 @@
         <!--Navigation Controller-->
         <scene sceneID="yTl-Bu-Uj2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-6l-YjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="6Lc-Ao-3HT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="50I-Dw-otV">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -164,6 +180,7 @@
                         <segue destination="7rY-jW-Xxh" kind="relationship" relationship="rootViewController" id="hUH-ij-Zng"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-6l-YjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1026" y="-699"/>
         </scene>
@@ -264,7 +281,7 @@
         <!--Регистрация-->
         <scene sceneID="bhp-On-WQB">
             <objects>
-                <viewController id="9zw-1j-j39" sceneMemberID="viewController">
+                <viewController id="9zw-1j-j39" customClass="RegistrationViewController" customModule="Corgi_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nca-ao-zLw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,6 +289,38 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regback" translatesAutoresizingMaskIntoConstraints="NO" id="Shb-ph-dSK">
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" minimumFontSize="17" background="logregbuttonBack" translatesAutoresizingMaskIntoConstraints="NO" id="ra7-hy-ujs">
+                                <rect key="frame" x="48" y="295" width="286" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.23921568627450979" green="0.13333333333333333" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUh-VG-V7u">
+                                <rect key="frame" x="93" y="613" width="190" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="кнопка регистрация"/>
+                                <connections>
+                                    <action selector="registrationButton:" destination="9zw-1j-j39" eventType="touchUpInside" id="W8a-fw-vGC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="17" background="logregbuttonBack" translatesAutoresizingMaskIntoConstraints="NO" id="KXf-Cv-DEx">
+                                <rect key="frame" x="48" y="374" width="286" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.23921568630000001" green="0.1333333333" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" background="logregbuttonBack" translatesAutoresizingMaskIntoConstraints="NO" id="7yx-3P-icf">
+                                <rect key="frame" x="48" y="456" width="286" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.23921568630000001" green="0.1333333333" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -283,6 +332,11 @@
                         <viewLayoutGuide key="safeArea" id="hLL-eE-ZFv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Регистрация" id="Lsp-Qd-tkr"/>
+                    <connections>
+                        <outlet property="iconTextField" destination="ra7-hy-ujs" id="LUm-X4-fx0"/>
+                        <outlet property="mailTextField" destination="KXf-Cv-DEx" id="3cb-E2-hHy"/>
+                        <outlet property="passTextField" destination="7yx-3P-icf" id="Wqu-pp-sTv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2I-oI-oGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -671,6 +725,7 @@
         <image name="LoginImage" width="375" height="667"/>
         <image name="MainBack" width="375" height="667"/>
         <image name="Mask" width="86" height="86"/>
+        <image name="logregbuttonBack" width="300" height="63"/>
         <image name="menuBack" width="308" height="667"/>
         <image name="regback" width="375" height="637"/>
         <image name="Войти" width="241" height="54"/>
@@ -687,6 +742,7 @@
         <image name="кнопка Здоровье" width="375" height="125"/>
         <image name="кнопка главное" width="211" height="38"/>
         <image name="кнопка прогулки" width="375" height="125"/>
+        <image name="кнопка регистрация" width="190" height="49"/>
         <image name="фото" width="86" height="86"/>
     </resources>
     <inferredMetricsTieBreakers>

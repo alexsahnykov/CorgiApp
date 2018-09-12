@@ -49,6 +49,11 @@
 		C11CAEB12141664D005744F0 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11CAE942141664D005744F0 /* SF-Pro-Text-Medium.otf */; };
 		C15AC40D21467003008FABC9 /* AdobeKaitiStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C15AC40C21467003008FABC9 /* AdobeKaitiStd-Regular.otf */; };
 		C15AC40F2146719F008FABC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C15AC40E2146719E008FABC9 /* GoogleService-Info.plist */; };
+		C15AC4142147B525008FABC9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AC4132147B525008FABC9 /* RegistrationViewController.swift */; };
+		C19A87BE2147D636006EB49F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A87BD2147D636006EB49F /* Extension.swift */; };
+		C19A87C021490624006EB49F /* LogInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A87BF21490624006EB49F /* LogInManager.swift */; };
+		C19A87C3214911DD006EB49F /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A87C2214911DD006EB49F /* CustomAlert.swift */; };
+		C19A87C5214915BA006EB49F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A87C4214915BA006EB49F /* UserModel.swift */; };
 		C1A33B85213583910071A369 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A33B84213583910071A369 /* MainViewController.swift */; };
 		CC03E552D3A173EBFCD3C190 /* Pods_Corgi_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25081A8D31A19A84B5B67EF /* Pods_Corgi_App.framework */; };
 /* End PBXBuildFile section */
@@ -123,6 +128,11 @@
 		C11CAE942141664D005744F0 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "Corgi App/Fronts/SF-Pro-Text-Medium.otf"; sourceTree = SOURCE_ROOT; };
 		C15AC40C21467003008FABC9 /* AdobeKaitiStd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AdobeKaitiStd-Regular.otf"; path = "Corgi App/Fronts/AdobeKaitiStd-Regular.otf"; sourceTree = SOURCE_ROOT; };
 		C15AC40E2146719E008FABC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C15AC4132147B525008FABC9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		C19A87BD2147D636006EB49F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C19A87BF21490624006EB49F /* LogInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInManager.swift; sourceTree = "<group>"; };
+		C19A87C2214911DD006EB49F /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		C19A87C4214915BA006EB49F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C1A33B84213583910071A369 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E25081A8D31A19A84B5B67EF /* Pods_Corgi_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corgi_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E329C4EE8E843AB89B848C4F /* Pods-Corgi AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corgi AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Corgi AppUITests/Pods-Corgi AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +219,7 @@
 				C14F1DE321356041005E95F7 /* Application */,
 				C14F1DE5213560CD005E95F7 /* Main */,
 				C197257C213E6AD000F8FF82 /* Registartion */,
+				C19A87C1214911AF006EB49F /* Managers */,
 				C11CAE7721416614005744F0 /* Fronts */,
 				C14F1DE421356090005E95F7 /* SupportFiles */,
 			);
@@ -349,11 +360,47 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C197257C213E6AD000F8FF82 /* Registartion */ = {
+		C15AC4102147B4EC008FABC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C15AC4132147B525008FABC9 /* RegistrationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C15AC4112147B4F8008FABC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15AC4122147B4FD008FABC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C19A87C4214915BA006EB49F /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C197257C213E6AD000F8FF82 /* Registartion */ = {
+			isa = PBXGroup;
+			children = (
+				C15AC4122147B4FD008FABC9 /* Model */,
+				C15AC4112147B4F8008FABC9 /* View */,
+				C15AC4102147B4EC008FABC9 /* Controller */,
+			);
 			path = Registartion;
+			sourceTree = "<group>";
+		};
+		C19A87C1214911AF006EB49F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C19A87BD2147D636006EB49F /* Extension.swift */,
+				C19A87BF21490624006EB49F /* LogInManager.swift */,
+				C19A87C2214911DD006EB49F /* CustomAlert.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,14 +574,18 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Corgi App/Pods-Corgi App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,10 +654,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15AC4142147B525008FABC9 /* RegistrationViewController.swift in Sources */,
 				C1A33B85213583910071A369 /* MainViewController.swift in Sources */,
+				C19A87BE2147D636006EB49F /* Extension.swift in Sources */,
+				C19A87C3214911DD006EB49F /* CustomAlert.swift in Sources */,
 				C115A30221353101009A10C7 /* FirstLaunchController.swift in Sources */,
 				C115A30021353101009A10C7 /* AppDelegate.swift in Sources */,
+				C19A87C021490624006EB49F /* LogInManager.swift in Sources */,
 				C102667E2135AAB600D72FA9 /* LogInMenuViewController.swift in Sources */,
+				C19A87C5214915BA006EB49F /* UserModel.swift in Sources */,
 				C10266802135AB1300D72FA9 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
