@@ -6,21 +6,11 @@ target 'Corgi App' do
   use_frameworks!
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
-pod 'SCLAlertView'
+pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git', :branch => 'master'
 pod 'IQKeyboardManagerSwift'
 pod 'Firebase/Database'
 
-  # Pods for Corgi App
-
-  target 'Corgi AppTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'Corgi AppUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

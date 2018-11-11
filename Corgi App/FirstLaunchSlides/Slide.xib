@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="Corgi_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OB-sb-OfX">
+                    <rect key="frame" x="16" y="508" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BuN-zm-gSp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVM-bo-83J">
+                    <rect key="frame" x="166" y="479" width="42" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygM-oB-V4i">
+                    <rect key="frame" x="45" y="32" width="284" height="389"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="389" id="xby-we-lvO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ygM-oB-V4i" secondAttribute="trailing" constant="46" id="Em0-FN-F2U"/>
+                <constraint firstItem="9OB-sb-OfX" firstAttribute="centerX" secondItem="DVM-bo-83J" secondAttribute="centerX" id="GGX-ya-hzu"/>
+                <constraint firstItem="9OB-sb-OfX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="Q2f-Gh-GNX"/>
+                <constraint firstItem="DVM-bo-83J" firstAttribute="top" secondItem="ygM-oB-V4i" secondAttribute="bottom" constant="58" id="Tlz-fp-NQR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9OB-sb-OfX" secondAttribute="bottom" constant="138" id="V5C-eg-vIJ"/>
+                <constraint firstItem="ygM-oB-V4i" firstAttribute="centerX" secondItem="DVM-bo-83J" secondAttribute="centerX" id="f0s-DY-T9i"/>
+                <constraint firstItem="9OB-sb-OfX" firstAttribute="firstBaseline" secondItem="DVM-bo-83J" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="fkt-5g-6Tx"/>
+                <constraint firstItem="ygM-oB-V4i" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="uPS-Dd-ies"/>
+                <constraint firstItem="ygM-oB-V4i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="45" id="x3N-Zc-rOE"/>
+                <constraint firstItem="ygM-oB-V4i" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="284:667" id="zNj-10-7oK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgeView" destination="ygM-oB-V4i" id="ncw-WA-42E"/>
+                <outlet property="textLable" destination="9OB-sb-OfX" id="10t-xO-UGj"/>
+                <outlet property="titleLable" destination="DVM-bo-83J" id="x9n-j9-y9n"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>
