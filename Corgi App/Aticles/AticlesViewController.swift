@@ -12,7 +12,7 @@ import Firebase
 
 class AticlesViewController: MainViewController {
     var storagePath:String = ""
-
+    
     @IBOutlet weak var wallsButton: UIButton!
     @IBOutlet weak var HealthButton: UIButton!
     @IBOutlet weak var FitButton: UIButton!
@@ -43,14 +43,14 @@ class AticlesViewController: MainViewController {
         customisationNavigationBar(title: "Статьи")
     }
     
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "articleGroupSegue" {
             let dvc = segue.destination as! AticlesTableViewController
             dvc.storagePath = self.storagePath
-     }
+        }
     }
-        
+    
     
     func  buttonPressed (storage:String) {
         self.storagePath = storage

@@ -17,12 +17,12 @@ struct Article {
     let creationDate: Date
     
     init(title: String, text: String, id: Int, imageUrl:String,creationDate:Date, review:String? ) {
-         self.title = title
-         self.text = text
-         self.id = id
-         self.imageUrl = imageUrl
-         self.creationDate = creationDate
-         self.review = review
+        self.title = title
+        self.text = text
+        self.id = id
+        self.imageUrl = imageUrl
+        self.creationDate = creationDate
+        self.review = review
     }
     
 }
