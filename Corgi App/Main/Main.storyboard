@@ -142,6 +142,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yTl-Bu-Uj2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-6l-YjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="6Lc-Ao-3HT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="50I-Dw-otV">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -156,7 +157,6 @@
                         <segue destination="7rY-jW-Xxh" kind="relationship" relationship="rootViewController" id="hUH-ij-Zng"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-6l-YjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1026" y="-699"/>
         </scene>
@@ -169,16 +169,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-qq-32B" customClass="Menu" customModule="Corgi_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="294" height="724"/>
+                                <rect key="frame" x="0.0" y="88" width="215" height="724"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tTo-MY-k3a">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="724"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="724"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.91372549020000005" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask" translatesAutoresizingMaskIntoConstraints="NO" id="51c-qk-T1N">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51c-qk-T1N">
                                         <rect key="frame" x="94" y="109" width="86" height="86"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фото" translatesAutoresizingMaskIntoConstraints="NO" id="sEK-I8-jaW">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEK-I8-jaW">
                                         <rect key="frame" x="97" y="112" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="bzT-xW-pXB"/>
@@ -190,32 +190,29 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Привет!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zm-tI-mQE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Привет!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zm-tI-mQE">
                                         <rect key="frame" x="111" y="195" width="52" height="21"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
                                         <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OZ-bF-dAJ">
-                                        <rect key="frame" x="17" y="245" width="241" height="54"/>
+                                        <rect key="frame" x="123" y="255" width="30" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Войти"/>
                                         <connections>
                                             <segue destination="OiS-us-Y4m" kind="show" id="wKe-ZU-iH6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvd-il-bGW">
-                                        <rect key="frame" x="17" y="319" width="241" height="54"/>
+                                        <rect key="frame" x="123" y="329" width="30" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Регистрация"/>
                                         <connections>
                                             <segue destination="9zw-1j-j39" kind="showDetail" id="GV3-eZ-CaI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-ez-Hqn">
-                                        <rect key="frame" x="17" y="628" width="241" height="54"/>
+                                        <rect key="frame" x="123" y="638" width="30" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="О приложении"/>
                                         <connections>
                                             <segue destination="nTg-je-c80" kind="show" id="hq2-48-BJy"/>
                                         </connections>
@@ -225,22 +222,24 @@
                                     <constraint firstItem="51c-qk-T1N" firstAttribute="top" secondItem="2Wd-qq-32B" secondAttribute="top" constant="109" id="0HC-mX-STn"/>
                                     <constraint firstItem="5Zm-tI-mQE" firstAttribute="leading" secondItem="2Wd-qq-32B" secondAttribute="leading" constant="111" id="27z-DG-bkt"/>
                                     <constraint firstItem="tTo-MY-k3a" firstAttribute="top" secondItem="2Wd-qq-32B" secondAttribute="top" id="3Tq-7u-rUP"/>
-                                    <constraint firstAttribute="trailing" secondItem="tTo-MY-k3a" secondAttribute="trailing" id="4VR-NU-7G2"/>
+                                    <constraint firstAttribute="trailing" secondItem="tTo-MY-k3a" secondAttribute="trailing" constant="-19" id="4VR-NU-7G2"/>
                                     <constraint firstAttribute="bottom" secondItem="tTo-MY-k3a" secondAttribute="bottom" id="70U-Oq-KlG"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Zm-tI-mQE" secondAttribute="trailing" constant="20" symbolic="YES" id="Ujk-r1-xUy"/>
                                     <constraint firstItem="tTo-MY-k3a" firstAttribute="leading" secondItem="2Wd-qq-32B" secondAttribute="leading" id="aeC-ya-or3"/>
                                     <constraint firstItem="sEK-I8-jaW" firstAttribute="centerX" secondItem="51c-qk-T1N" secondAttribute="centerX" id="dwn-1s-b9Z"/>
                                     <constraint firstItem="5Zm-tI-mQE" firstAttribute="top" secondItem="51c-qk-T1N" secondAttribute="bottom" id="edC-Ub-45c"/>
                                     <constraint firstItem="sEK-I8-jaW" firstAttribute="centerY" secondItem="51c-qk-T1N" secondAttribute="centerY" id="gSl-5Z-Hho"/>
-                                    <constraint firstItem="51c-qk-T1N" firstAttribute="centerX" secondItem="tTo-MY-k3a" secondAttribute="centerX" constant="-10" id="yvM-pN-hUm"/>
+                                    <constraint firstItem="51c-qk-T1N" firstAttribute="centerX" secondItem="tTo-MY-k3a" secondAttribute="centerX" constant="20" id="yvM-pN-hUm"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2Wd-qq-32B" firstAttribute="leading" secondItem="nRm-SN-kn4" secondAttribute="leading" id="TPu-iZ-KZ1"/>
+                            <constraint firstItem="tTo-MY-k3a" firstAttribute="top" secondItem="nRm-SN-kn4" secondAttribute="top" id="ecO-kZ-K56"/>
+                            <constraint firstItem="tTo-MY-k3a" firstAttribute="bottom" secondItem="nRm-SN-kn4" secondAttribute="bottom" constant="34" id="fkn-NO-3DX"/>
                             <constraint firstAttribute="bottom" secondItem="2Wd-qq-32B" secondAttribute="bottom" id="kJb-Mv-37A"/>
-                            <constraint firstItem="nRm-SN-kn4" firstAttribute="trailing" secondItem="2Wd-qq-32B" secondAttribute="trailing" constant="81" id="s2Z-8a-4Yn"/>
+                            <constraint firstItem="nRm-SN-kn4" firstAttribute="trailing" secondItem="2Wd-qq-32B" secondAttribute="trailing" constant="160" id="s2Z-8a-4Yn"/>
                             <constraint firstItem="2Wd-qq-32B" firstAttribute="top" secondItem="nRm-SN-kn4" secondAttribute="top" id="sO4-c8-sP1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nRm-SN-kn4"/>
@@ -253,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9J-st-G8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="-699"/>
+            <point key="canvasLocation" x="32.799999999999997" y="-699.01477832512319"/>
         </scene>
         <!--Регистрация-->
         <scene sceneID="bhp-On-WQB">
@@ -705,7 +704,7 @@
             <objects>
                 <tableViewController id="2Dp-wA-KHx" customClass="FavoriteTableViewController" customModule="Corgi_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2tL-0O-QGg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -724,6 +723,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="10z-Al-Uhh"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtT-g5-eOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -740,17 +740,15 @@
         <image name="logregbuttonBack" width="300" height="63"/>
         <image name="menuBack" width="308" height="667"/>
         <image name="regback" width="375" height="637"/>
-        <image name="Войти" width="241" height="54"/>
         <image name="Кнопка избранное" width="211" height="39"/>
         <image name="Кнопка профиль" width="210" height="40"/>
         <image name="О приложении" width="241" height="54"/>
-        <image name="Регистрация" width="241" height="54"/>
         <image name="выход" width="241" height="54"/>
         <image name="кнопка главное" width="211" height="38"/>
         <image name="кнопка регистрация" width="190" height="49"/>
         <image name="фото" width="86" height="86"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K0d-ia-A9Q"/>
+        <segue reference="hq2-48-BJy"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,8 +10,9 @@ import UIKit
 import Foundation
 import Firebase
 
-class AticlesViewController: MainViewController {
+class AticlesViewController: UIViewController {
     var storagePath:String = ""
+    var menuVc : LogInMenuViewController!
     
     @IBOutlet weak var wallsButton: UIButton!
     @IBOutlet weak var HealthButton: UIButton!
@@ -37,10 +38,16 @@ class AticlesViewController: MainViewController {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuVc = self.storyboard?.instantiateViewController(withIdentifier: "LogInMenuViewController") as? LogInMenuViewController
+
         customisationNavigationBar(title: "Статьи")
+        menuVc.facade(Vc: self)
+    
+    }
+    override func viewWillAppear(_ animated: Bool) {
+
     }
     
     

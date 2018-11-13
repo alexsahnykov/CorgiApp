@@ -14,7 +14,7 @@ class AticlesTableViewController: UITableViewController {
     var storagePath:String = ""
     var aticles:[Article] = []
     let db = Firestore.firestore()
-
+    
     let loadingView = UIView()
     let spinner = UIActivityIndicatorView()
     let loadingLabel = UILabel()
@@ -31,21 +31,21 @@ class AticlesTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-   
-     
+        
+        
     }
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return aticles.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArcticleTableViewCell
         let cellItem = aticles[indexPath.row]
@@ -53,14 +53,14 @@ class AticlesTableViewController: UITableViewController {
         cell.title.text = cellItem.title
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let filmForSegue = aticles[indexPath.row]
         self.aticle = filmForSegue
         performSegue(withIdentifier: "articleSegue", sender: self)
     }
-   
+    
     
     
     // MARK: - Segue
@@ -76,7 +76,7 @@ class AticlesTableViewController: UITableViewController {
     
     // MARK: - UI
     
-
+    
     private func removeLoadingScreen() {
         
         // Hides and stops the text and the spinner
@@ -122,8 +122,8 @@ class AticlesTableViewController: UITableViewController {
             self.removeLoadingScreen()
             self.tableView.separatorColor = .colorLine
         }
-        }
-    
-   
     }
+    
+    
+}
 

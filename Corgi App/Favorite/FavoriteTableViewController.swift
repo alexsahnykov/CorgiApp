@@ -10,10 +10,15 @@ import UIKit
 import CoreData
 
 class FavoriteTableViewController: UITableViewController {
-    var aticles:[ArticleCoreData] = []
+    var aticles = [ArticleCoreData]()
+    var menuVc : LogInMenuViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customisationNavigationBar(title: "Избраное")
+        menuVc = self.storyboard?.instantiateViewController(withIdentifier: "LogInMenuViewController") as? LogInMenuViewController
+        menuVc.facade(Vc: self)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,7 +52,7 @@ class FavoriteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) // as! ArcticleTableViewCell
         let cellItem = aticles[indexPath.row]
         cell.textLabel?.text = cellItem.title
-        // Configure the cell...
+       
         
         return cell
     }
